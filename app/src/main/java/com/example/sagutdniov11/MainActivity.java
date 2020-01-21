@@ -1,8 +1,11 @@
 package com.example.sagutdniov11;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +13,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final TextView finalView = (TextView) findViewById(R.id.textView5);
+        final TextView nameView = (TextView) findViewById(R.id.name);
+        final TextView emailView = (TextView) findViewById(R.id.email);
+        Button okBtn=(Button)findViewById(R.id.ok);
+        okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                //TO DO
+                finalView.setText("Подписка на рассылку успешно оформлена для пользователя");
+            }
+        });
+        Button clearBtn=(Button)findViewById(R.id.clear);
+        clearBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nameView.setText("");
+                emailView.setText("");
+            }
+        });
     }
+
 }
