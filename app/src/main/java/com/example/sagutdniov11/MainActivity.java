@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 //TO DO
-                finalView.setText("Подписка на рассылку успешно оформлена для пользователя");
+                String NameT = nameView.getText().toString();
+                String emailT = emailView.getText().toString();
+                finalView.setText(getString(R.string.finalText, NameT, emailT));
             }
         });
         Button clearBtn=(Button)findViewById(R.id.clear);
