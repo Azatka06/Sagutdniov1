@@ -25,6 +25,17 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         });
 
+        Button enterButton2=(Button)findViewById(R.id.enter2);
+        enterButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                //TO DO
+                Intent intent=new Intent(SplashScreenActivity.this,fotoalbum.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 }

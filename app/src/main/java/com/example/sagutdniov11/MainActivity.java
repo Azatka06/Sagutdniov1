@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 //TO DO
                 String NameT = nameView.getText().toString();
                 String emailT = emailView.getText().toString();
+
                 finalView.setText(getString(R.string.finalText, NameT, emailT));
             }
         });

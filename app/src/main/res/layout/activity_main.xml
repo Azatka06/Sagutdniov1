@@ -11,7 +11,7 @@
         android:layout_width="142dp"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        android:text="Подписка"
+        android:text="@string/header_first"
         android:textColor="#D7FF0000"
         android:textColorHighlight="#00F52424"
         android:textColorHint="#00FF0A0A"

@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Sagutdniov 1.1</string>
+    <string name="header_first">Подписка</string>
+    <string name="header_second">Просмотр фото</string>
+    <string name="link">http://myfile.org/%1$d</string>
+    <string name="undoBtn">Назад</string>
+    <string name="nextBtn">Вперёд</string>
     <string name="name">Введите ваше имя</string>
     <string name="email">Введите ваш e-mail</string>
     <string name="finalText">Подписка на рассылку успешно оформлена для пользователя %1$s на электронный адрес %2$s</string>
